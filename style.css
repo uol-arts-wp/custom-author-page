@@ -1,0 +1,110 @@
+/*
+ Theme Name:   GeneratePress Child
+ Theme URI:    http://
+ Description:  Dev GeneratePress Child Theme, adds pages and styles for Profile custom post type.
+ Author:       Steve Honeyman
+ Author URI:   http://
+ Template:     generatepress
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  generatepress-child
+*/
+
+/* ==================== styles for custom post types start ======================== */
+
+/* page-profiles.php */
+
+.profiles {
+	margin-top: 12px;
+	}
+
+.profile-container {
+/*	width: 20%; */
+	height: 300px;
+	float: left;
+	padding: 0 12px 12px 12px;
+/*	border-radius: 5px; */
+/*	box-shadow: ; */
+	border: 1px solid #ccc;	
+	margin-right: 12px;
+	margin-bottom: 12px;
+	box-sizing: border-box;
+	background: #fff;
+	}
+
+/* single-profile.php */	
+
+.individual-profile-container {
+	width: 98%;
+	min-height: 600px;
+	float: left;
+	padding: 0 12px 12px 12px;
+/*	border-radius: 5px;	*/
+	box-shadow: ;
+	border: 1px solid #ccc; 
+	box-sizing: border-box;
+	margin-top: 12px;
+	margin-bottom: 12px;
+	margin-right: 2%;
+	background: #fff; 
+	}
+
+.individual-profile-container p {
+	margin-bottom: 0 !important;
+	}		
+
+.individual-profile-container strong {
+/*	color: #666;	*/
+	}
+
+/* page-profiles & single-profile */
+
+.profile-container, .individual-profile-container img {
+	max-width: 100% !important;
+	}
+
+.clearer {
+	clear: both;
+	} 
+	
+/* ==================== styles for custom post types fin ======================== */
+
+
+/* ====================== authors page responsive stlyes ===========================*/
+
+
+@media only screen and (max-width: 419px) {
+	.profile-container {
+		width: 96%;
+		float: none;
+		margin-top: 0;
+		margin-right: auto;
+		margin-bottom: 12px;
+		margin-left: auto;
+	}
+} /* --------- close 419 and under query ------ */
+
+@media only screen and (min-width : 420px) {
+
+	.profiles {
+		padding-left: 12px;
+	}
+
+	.profile-container {
+		width: 46%; /* 2 col layout */
+		float: left;
+	}
+
+} /* --------- close 420 - 767 query ------ */
+
+
+@media only screen and (min-width : 768px) {
+
+	.profile-container {
+	  	width: 20% ; /* 4 col layout */
+	  	float: left;
+  	}
+
+ } /* --------- close 768 and above query ------ */
