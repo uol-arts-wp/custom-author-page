@@ -1,20 +1,19 @@
 <?php get_header(); ?>
 
+	<div class="individual-profile-container">
+		
+	    <h1>Author: <?php the_title();?><h1>
+	    <figure><?php the_post_thumbnail(); ?></figure>
 
-<div class="individual-profile-container">
-	
-    Author: <?php the_title();?></br>
-    <?php the_post_thumbnail(); ?></br>
+	    <p><strong>Author Bio</strong></p>
+	    <p><?php the_field('author_bio'); ?></p>
+	    <p><strong>Bibliography<strong></p>
+	    <p><?php the_field('bibliography'); ?></p>
+	    <p><strong>Website</strong></p>  
+	    <p><?php the_field('website'); ?></p>
 
-    Author Bio</strong><br />
-    <?php the_field('author_bio'); ?></br>
-    Bibliography</br>
-    <?php the_field('bibliography'); ?></br>
-    Website</strong></br>   
-    <?php the_field('website'); ?></br>
+	</div>  
 
-</div>  
-
-<div class="clearer">&nbsp</div>  
+	<div class="clear-both">&nbsp;</div>  
 
 <?php get_footer(); ?>
