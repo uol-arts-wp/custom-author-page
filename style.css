@@ -62,6 +62,8 @@
 /* page-profiles & single-profile */
 
 .profile-container, .individual-profile-container img {
+	.
+
 	max-width: 100% !important;
 	}
 
@@ -69,10 +71,10 @@
 	clear: both;
 	} 
 	
-/* ==================== styles for custom post types fin ======================== */
+/* ===================== styles for custom post types fin ======================== */
 
 
-/* ====================== authors page responsive stlyes ===========================*/
+/* ===================== authors page responsive stlyes ===========================*/
 
 
 @media only screen and (max-width: 419px) {
